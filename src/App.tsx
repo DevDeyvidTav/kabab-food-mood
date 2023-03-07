@@ -1,5 +1,7 @@
 import { About } from "./components/About";
 import { AboutMobile } from "./components/About_mobile";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 import { HeaderMobile } from "./components/Header_mobile";
 import { Home } from "./components/Home";
 import { HomeMobile } from "./components/Home_mobile";
@@ -18,6 +20,8 @@ export function App(){
         <AboutMobile/>
         <Menu/>
         <MenuMobile/>
+        <Contact/>
+        <Footer/>
     </div>
   )
 }

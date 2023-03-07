@@ -15,25 +15,25 @@ export function Header(){
                 <li 
                 onClick={() => setSelect(1)}
                 className={`${select === 1 ? "text-[#93FF0A]" : "" } duration-500`}>
-                    Home
+                   <a href="#">Home</a>
                     <div className={`${select === 1 ? "" : "opacity-0"} duration-500 w-[40px] mx-auto h-1 bg-[#93FF0A]`}/>
                 </li>
                 <li 
                 onClick={() => setSelect(2)}
                 className={`${select === 2 ? "text-[#93FF0A]" : "" } duration-500`}>
-                    Sobre
+                    <a href="#about">Sobre</a>
                     <div className={`${select === 2 ? "" : "opacity-0"} duration-500 w-[40px] mx-auto h-1 bg-[#93FF0A]`}/>
                 </li>
                 <li 
                 onClick={() => setSelect(3)}
                 className={`${select === 3 ? "text-[#93FF0A]" : "" } duration-500`}>
-                    Cardápio
+                    <a href="#menu">Cardápio</a>
                     <div className={`${select === 3 ? "" : "opacity-0"} duration-500 w-[40px] mx-auto h-1 bg-[#93FF0A]`}/>
                 </li>
                 <li 
                 onClick={() => setSelect(4)}
                 className={`${select === 4 ? "text-[#93FF0A]" : "" } duration-500`}>
-                    Localização
+                    <a href="#contact">Contato</a>
                     <div className={`${select === 4 ? "" : "opacity-0"} duration-500 w-[40px] mx-auto h-1 bg-[#93FF0A]`}/>
                 </li>
             </ul>

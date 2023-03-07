@@ -5,7 +5,7 @@ import {AiOutlineClose} from "react-icons/ai"
 export function NavMobile() {
     const { open, setOpen } = useContext(NavMobileContext)
     return (
-        <div className={`${open ? "translate-x-0" : "-translate-x-full"} duration-500 flex w-full fixed h-screen`}>
+        <div className={`${open ? "translate-x-0" : "-translate-x-full"} z-50  duration-500 flex w-full fixed h-screen`}>
             <div className="bg-[#1B1C23] px-3 text-[30px] border-r-2 border-white font-extrabold text-white flex flex-col w-[70%] h-full">
                 <div className="w-full border-b-2 flex justify-between items-center cursor-pointer border-white">
                     <div>
@@ -36,8 +36,8 @@ export function NavMobile() {
                     </a>
                     <a 
                     onClick={() => setOpen(false)}
-                    href="#">
-                        Localização
+                    href="#contact">
+                        Contato
                     </a>
                 </div>
                 

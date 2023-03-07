@@ -1,11 +1,22 @@
+import AOS from "aos"
+import { useEffect } from "react"
+import 'aos/dist/aos.css'
+
 export function Menu() {
+    useEffect(() => {
+        AOS.init({ duration: 1000, easing: 'ease-out' })
+      })
     return (
-        <div className="w-full h-screen lg:flex hidden lg:flex-col ">
+        <div 
+        id="menu"
+        className="w-full h-screen max-w-full lg:flex hidden lg:flex-col ">
             <h2 className="text-[#93FF0A] text-3xl font-bold pl-10 pt-10">
                 Cardápio
             </h2>
             <div className="w-full flex gap-[150px] mt-20 px-10">
-                <div className="space-y-5">
+                <div
+                data-aos="fade-right"
+                className="space-y-5">
                     <div
                         className="w-1/2 flex gap-5">
                         <img
@@ -43,7 +54,9 @@ export function Menu() {
                             src="/lasanha.png" alt="" />
                     </div>
                 </div>
-                <div className="w-1/2  flex flex-col">
+                <div 
+                data-aos="fade-left"
+                className="w-1/2  flex flex-col">
                     <h3 className="text-5xl font-extrabold text-white">
                         Melhores opções do nosso estado
                     </h3>

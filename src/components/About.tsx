@@ -1,13 +1,22 @@
+import AOS from "aos"
+import { useEffect } from "react"
+import 'aos/dist/aos.css'
+
 export function About() {
+    useEffect(() => {
+        AOS.init({ duration: 1000, easing: 'ease-out' })
+      })
     return (
         <div
             id="about"
             className="w-full h-screen bg-[#EEEEEE] gap-[120px] max-w-full pt-20 hidden lg:flex ">
             <img
-                className="rounded-md ml-20 h-[80%] w-[30%]"
+                data-aos="fade-up"
+                className="rounded-md shadow-lg ml-20 h-[80%] w-[30%]"
                 src="/img-about.png"
                 alt="" />
-            <div>
+            <div 
+                data-aos="fade-down">
                 <h2 className="text-[#93FF0A] text-3xl font-bold">
                     Sobre
                 </h2>

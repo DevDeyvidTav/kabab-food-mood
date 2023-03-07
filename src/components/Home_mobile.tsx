@@ -1,7 +1,15 @@
+import AOS from "aos"
+import { useEffect } from "react"
+import 'aos/dist/aos.css'
 export function HomeMobile() {
+    useEffect(() => {
+        AOS.init({ duration: 1000, easing: 'ease-out' })
+      })
     return (
         <div className="w-full h-screen max-w-full max-h-full lg:hidden  bg-home-mobile bg-no-repeat bg-cover">
-            <div className="pt-[330px] w-full flex flex-col items-center gap-16">
+            <div 
+            data-aos="fade-up"
+            className="pt-[330px] w-full flex flex-col items-center gap-16">
                 <img
                     src="/KABAB.png"
                     alt=""

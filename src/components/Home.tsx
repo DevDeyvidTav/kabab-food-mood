@@ -1,10 +1,18 @@
+import AOS from "aos"
+import { useEffect } from "react"
+import 'aos/dist/aos.css'
 import { Header } from "./Header";
 
 export function Home() {
+    useEffect(() => {
+        AOS.init({ duration: 1000, easing: 'ease-out' })
+      })
     return (
         <div className="w-screen h-screen lg:flex lg:flex-col hidden max-w-full max-h-full bg-home bg-no-repeat bg-cover">
             <Header />
-            <div className="flex-col flex justify-between mt-[100px] h-3/5 w-full px-[87px]">
+            <div 
+            data-aos="fade-right"
+             className="flex-col flex justify-between mt-[100px] h-3/5 w-full px-[87px]">
                 <div>
                     <img src="/KABAB.png" alt="" />
                     <p className="font-semibold text-[27px] text-white w-[659px] mt-5">
